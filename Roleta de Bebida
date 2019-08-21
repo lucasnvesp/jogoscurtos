@@ -1,0 +1,49 @@
+const nome1 = 'A'
+const nome2 = 'B'
+const nome3 = 'C'
+const nome4 = 'D'
+
+    let aleat1 = Math.floor(Math.random()*10)
+    let aleat2 = Math.floor(Math.random()*10)
+    let aleat3 = Math.floor(Math.random()*10)
+    let aleat4 = Math.floor(Math.random()*10)
+
+let maior = Math.max(aleat1, aleat2, aleat3, aleat4)
+let menor = Math.min(aleat1, aleat2, aleat3, aleat4)
+
+    let vencedor = []
+    let perdedor = []
+
+if(maior == aleat1){
+    vencedor = [aleat1, nome1]
+}
+
+else if(maior == aleat2){
+    vencedor = [aleat2, nome2]
+}
+
+else if(maior == aleat3){
+    vencedor = [aleat3, nome3]
+}
+
+else if(maior == aleat4){
+    vencedor = [aleat4, nome4]
+}
+
+if(menor == aleat1){
+    perdedor = [aleat1, nome1]
+}
+
+else if(menor == aleat2){
+    perdedor = [aleat2, nome2]
+}
+
+else if(menor == aleat3){
+    perdedor = [aleat3, nome3]
+}
+
+else if(menor == aleat4){
+    perdedor = [aleat4, nome4]
+}
+
+console.log(vencedor[1] + " dá um shot pra alguém e " + perdedor[1] + " toma um shot!")
